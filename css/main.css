@@ -94,10 +94,151 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
+/*colors for reference
+light blue: #a3cfd8
+dark navy: #021b2a
+white: #ffffff
+*/
+/*Font styles*/
+@font-face {
+  font-family:'athletas';
+  src:url(../fonts/Athelas.ttc) format('opentype');
+}
+@font-face {
+  font-family:'sign-painter';
+  src:url(../fonts/signpainter.ttc) format('opentype');
+}
+/* <style>
+  @import url("https://use.typekit.net/wnf7qgk.css");
+</style> */
+/*end font styles*/
+/*base font styles*/
+h1, h2, nav{
+  font-family: "athelas";
+  text-transform: uppercase;
+}
+h3{
+  font-family: "sign-painter";
+}
+p{
+  font-family: sans-serif;
+}
+a{
+  text-decoration: none;
+}
+/*base font style end*/
+/*header*/
+header{
+  width:100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../img/background-img.png') fixed center;
+}
+.logo {
+  width:100%;
+  text-align: center;
+}
+.logo a{
+  color:#a3cfd8;
+}
+nav{
+  width:100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  /* justify-content: space-between; */
+}
+nav li {
+  display: flex;
+  float:left;
+  padding-left: 5%;
+  justify-content: space-between;
+}
+nav a{
+  color:#ffffff;
+}
+.home h1{
+  color:#a3cfd8;
+}
+.home h3{
+  color:#ffffff;
+}
+.home{
+  border: 3px solid #a3cfd8;
+  padding:10%;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  border: 3px solid #a3cfd8;
+  text-align: center;
+  padding:5%;
+  margin:5%;
+  display: flex;
+}
+.button a{
+  color:#ffffff;
+  text-align: center;
+  width:100%;
+}
+/*header end*/
+/*footer*/
+footer{
+  display:flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  background:url('../img/background-img.png') center fixed;
+  padding:1%;
+}
+footer img{
+  padding:30%;
+}
+.sitemap ul{
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+}
+.sitemap a{
+  color:#ffffff;
+}
+.sitemap{
+  display: flex;
+  flex-flow: row;
+}
+.amanda{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.amanda h3{
+  color:#ffffff;
+  display: flex;
+  padding:0;
+  margin:0;
+}
+.amanda img{
+  width:100%;
+  display: flex;
+  align-items: center;
+  margin:0;
+  padding:0;
+}
+.amanda a{
+  width:30%;
+}
+/*footer end*/
 
 
 
