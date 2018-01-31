@@ -204,6 +204,7 @@ nav a:hover{
   color:#ffffff;
   text-align: center;
   padding:5%;
+  width:90%;
 }
 .button:hover{
   background-color:#a3cfd8;
@@ -326,6 +327,12 @@ footer h1{
 }
 /*end tryouts*/
 /*start teams*/
+.button.navy a{
+  color:#021b2a;
+}
+.button.navy{
+  width:50%;
+}
 /*end teams*/
 
 
