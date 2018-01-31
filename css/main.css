@@ -191,6 +191,15 @@ nav a:hover{
   justify-content: center;
   align-items: center;
 }
+.home-button{
+  border: 3px solid #a3cfd8;
+  text-align: center;
+  width:80%;
+  margin:10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .button{
   border: 3px solid #a3cfd8;
   text-align: center;
@@ -199,6 +208,12 @@ nav a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.home-button a{
+  color:#ffffff;
+  text-align: center;
+  padding:5%;
+  width:90%;
 }
 .button a{
   color:#ffffff;
@@ -276,7 +291,7 @@ footer h1{
   flex-flow:column;
   justify-content: center;
   align-items: center;
-  padding-bottom:5%;
+  padding-bottom:5%;  /*checking for coaches page*/
 }
 .feature-wrapper h1, h2, h3{
   text-align: center;
@@ -298,6 +313,7 @@ footer h1{
 }
 .feature {
   width:80%; /*looks way better when matching teh img width*/
+  padding:0 10% 0 10%; /*make it so when i change a feature color it changes the entire section*/
   display:flex;
   flex-flow:column;
   justify-content: center;
@@ -356,8 +372,33 @@ footer h1{
   font-size:1.2em;
 }
 /*end tournaments*/
-
-
+/*start coaches*/
+.feature.extra-padding{
+  margin: 10% 0 10% 0;
+  /* padding: 0 0 10% 0; */
+}
+.feature.grey{
+  background-color: #5f6971;
+  margin:0;
+  padding:10%;
+}
+/*end coaches*/
+/*start contact*/
+.feature-wrapper.smaller-font{
+  font-size: .8em;
+  padding-bottom:5%;
+}
+.feature.mini-padding{
+  margin: 5% 0 5% 0;
+}
+#more-info{
+  padding-bottom:5%;
+}
+.feature-wrapper.grey{
+  background-color: #5f6971;
+  color:#ffffff;
+}
+/*end contact*/
 
 
 
