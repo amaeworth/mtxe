@@ -139,12 +139,15 @@ header{
 .logo {
   width:100%;
   text-align: center;
+  padding-bottom:0;
+  margin-bottom: 0;
 }
 .logo a{
   color:#a3cfd8;
 }
 nav{
-  width:100%;
+  width:96%;
+  padding: 0 2% 0 2%;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -152,18 +155,16 @@ nav{
 }
 nav ul{
   list-style: none;
-  display: flex;
-  flex-flow: row;
-  /* justify-content: space-between; */
 }
 nav li {
   display: flex;
   float:left;
-  padding-left: 5%;
+  padding-left: 2%;
   justify-content: space-between;
 }
 nav a{
   color:#ffffff;
+  font-size: 1.2em;
 }
 nav a:hover{
   border-bottom: solid 3px #a3cfd8;
@@ -177,26 +178,48 @@ nav a:hover{
 .home h3{
   color:#ffffff;
 }
+.home-wrapper{
+  width:75%;
+}
 .home{
+  width: 100%;
   border: 3px solid #a3cfd8;
-  padding:10%;
+  /* padding:20% 0 20% 0; */
   text-align: center;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
+.home-button{
+  border: 3px solid #a3cfd8;
+  text-align: center;
+  width:80%;
+  margin:10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .button{
   border: 3px solid #a3cfd8;
   text-align: center;
-  margin:5%;
+  width:80%;
+  margin:10%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-button a{
+  color:#ffffff;
+  text-align: center;
+  padding:5%;
+  width:90%;
 }
 .button a{
   color:#ffffff;
   text-align: center;
-  width:100%;
   padding:5%;
+  width:90%;
 }
 .button:hover{
   background-color:#a3cfd8;
@@ -213,17 +236,27 @@ footer{
   align-items: center;
   background:url('../img/background-img.png') center fixed;
   padding:1%;
+  width:98%;
+}
+footer a{
+  width:50%;
 }
 footer img{
   padding:30%;
+  width:40%;
+}
+footer h1{
+  font-size: 1.2em;
 }
 .sitemap ul{
   list-style: none;
   display: flex;
   flex-flow: column;
+  padding:0 2% 0 2%;
 }
 .sitemap a{
   color:#ffffff;
+  font-size: .5em;
 }
 .sitemap{
   display: flex;
@@ -239,6 +272,7 @@ footer img{
   display: flex;
   padding:0;
   margin:0;
+  font-size: .8em;
 }
 .amanda img{
   width:100%;
@@ -248,7 +282,7 @@ footer img{
   padding:0;
 }
 .amanda a{
-  width:30%;
+  width:20%;
 }
 /*footer end*/
 /*main - about*/
@@ -257,19 +291,29 @@ footer img{
   flex-flow:column;
   justify-content: center;
   align-items: center;
+  padding-bottom:5%;  /*checking for coaches page*/
 }
 .feature-wrapper h1, h2, h3{
   text-align: center;
   display: flex;
   align-items: center;
-  /* width:inherit; */
 }
 .feature-wrapper h1{
   border-bottom: solid 3px #a3cfd8;
-  /* margin-right:90%; */
+}
+.feature-wrapper figure{
+  width:80%;
+   /*straighten everything up with flex*/
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-wrapper img{
+  width:100%; /*fill the container ie. figure*/
 }
 .feature {
-  width:50%;
+  width:80%; /*looks way better when matching teh img width*/
+  padding:0 10% 0 10%; /*make it so when i change a feature color it changes the entire section*/
   display:flex;
   flex-flow:column;
   justify-content: center;
@@ -281,15 +325,80 @@ footer img{
   margin:0;
   padding:0;
 }
+.feature p{
+  text-align: center;
+}
 #more-info a{
   color:#021b2a;
 }
 /*end main - about*/
-
-
-
-
-
+/*start tryouts*/
+.feature h3{
+  font-size: 2em;
+  padding:0;
+  margin:0;
+}
+.feature-wrapper:nth-child(2){
+  background: url('../img/background-img.png') fixed center;
+  color:#ffffff;
+}
+/*end tryouts*/
+/*start teams*/
+.button.navy a{
+  color:#021b2a;
+}
+.button.navy{
+  width:50%;
+}
+/*end teams*/
+/*start tournaments*/
+.subtitle h3{
+  font-size:1.5em;
+}
+.tournament p{
+  font-size: 1.5em;
+}
+.button-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+}
+.button{
+  display:flex;
+  margin: 0 2% 0 2%;
+}
+.button a{
+  font-size:1.2em;
+}
+/*end tournaments*/
+/*start coaches*/
+.feature.extra-padding{
+  margin: 10% 0 10% 0;
+  /* padding: 0 0 10% 0; */
+}
+.feature.grey{
+  background-color: #5f6971;
+  margin:0;
+  padding:10%;
+}
+/*end coaches*/
+/*start contact*/
+.feature-wrapper.smaller-font{
+  font-size: .8em;
+  padding-bottom:5%;
+}
+.feature.mini-padding{
+  margin: 5% 0 5% 0;
+}
+#more-info{
+  padding-bottom:5%;
+}
+.feature-wrapper.grey{
+  background-color: #5f6971;
+  color:#ffffff;
+}
+/*end contact*/
 
 
 
