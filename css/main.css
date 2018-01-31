@@ -308,14 +308,25 @@ footer h1{
   padding:0;
 }
 .feature p{
-  text-align: justify;
+  text-align: center;
 }
 #more-info a{
   color:#021b2a;
 }
 /*end main - about*/
-
-
+/*start tryouts*/
+.feature h3{
+  font-size: 2em;
+  padding:0;
+  margin:0;
+}
+.feature-wrapper:nth-child(2){
+  background: url('../img/background-img.png') fixed center;
+  color:#ffffff;
+}
+/*end tryouts*/
+/*start teams*/
+/*end teams*/
 
 
 
