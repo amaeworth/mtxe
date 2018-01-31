@@ -276,6 +276,7 @@ footer h1{
   flex-flow:column;
   justify-content: center;
   align-items: center;
+  padding-bottom:5%;
 }
 .feature-wrapper h1, h2, h3{
   text-align: center;
@@ -334,7 +335,27 @@ footer h1{
   width:50%;
 }
 /*end teams*/
-
+/*start tournaments*/
+.subtitle h3{
+  font-size:1.5em;
+}
+.tournament p{
+  font-size: 1.5em;
+}
+.button-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+}
+.button{
+  display:flex;
+  margin: 0 2% 0 2%;
+}
+.button a{
+  font-size:1.2em;
+}
+/*end tournaments*/
 
 
 
