@@ -394,7 +394,7 @@ footer h1{
 }
 .bio img{
   border-radius: 50%;
-  width:50%;  
+  width:50%;
 }
 /*end coaches*/
 /*start contact*/
@@ -638,7 +638,7 @@ footer h1{
     padding:0 2% 5% 2%;
   }
   .button.grid{
-    padding:0 30% 0 30%;
+    padding:0 10% 0 10%;
   }
   .tournament{
     display: flex;
