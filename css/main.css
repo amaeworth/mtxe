@@ -227,6 +227,12 @@ nav a:hover{
 .button a:hover{
   color:#021b2a;
 }
+.home-button:hover{
+  background-color:#a3cfd8;
+}
+.home-button a:hover{
+  color:#021b2a;
+}
 /*header end*/
 /*footer*/
 footer{
@@ -368,6 +374,10 @@ footer h1{
   display:flex;
   margin: 0 2% 0 2%;
 }
+.button.padding{
+  margin:5%;
+  padding:5%;
+}
 .button a{
   font-size:1.2em;
 }
@@ -381,6 +391,10 @@ footer h1{
   background-color: #5f6971;
   margin:0;
   padding:10%;
+}
+.bio img{
+  border-radius: 50%;
+  width:50%;  
 }
 /*end coaches*/
 /*start contact*/
@@ -480,7 +494,7 @@ footer h1{
    Modify as content requires.
    ========================================================================== */
 
-@media all and (min-width:768px) and (max-width:1200px){
+@media all and (min-width:768px){
     /* Style adjustments for tablets */
     /*font size changes*/
     h1{
@@ -526,7 +540,153 @@ footer h1{
       width:50%;
     }
 }
-
+@media all and (min-width:1200px) {
+  /* Style adjustments for desktop */
+  /*align nav in the center now that we have enough room*/
+  nav ul{
+    display:flex;
+    justify-content: center;
+    align-items:
+  }
+  /*update fonts*/
+  h1{
+    font-size: 3em;
+  }
+  p, a{
+    font-size: 1.5em;
+  }
+  nav a{
+    font-size: 1.8em;
+  }
+  .feature-wrapper h3{
+    font-size: 1.8em;
+  }
+  .feature h3{
+    font-size: 3em;
+  }
+  footer a{
+    width:20%;
+  }
+  footer img{
+    padding:30%;
+    width:40%;
+  }
+  footer h1{
+    font-size: 2em;
+  }
+  .sitemap a{
+    font-size: 1.2em;
+  }
+  .amanda h3{
+    font-size: 1.5em;
+  }
+  .amanda a{
+    width:30%;
+  }
+  /*end font update*/
+  .home-wrapper{
+    width:30%;
+  }
+  .feature.row {
+    display: flex;
+    flex-flow: row;
+  }
+  .feature figure{
+    width:50%;
+    display:inline;
+    float:left;
+  }
+  .feature-wrapper img{
+    display: inline;
+  }
+  .feature p{
+    float:right;
+    width:50%;
+  }
+  .feature-wrapper.grid{
+    display:grid;
+    /* flex-flow: row; */
+    grid-template-areas: ". a ." "b c d";
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap:2%; */
+  }
+  .feature.grid h3{
+    text-align: center;
+    width:100%;
+  }
+  .feauture.grid{
+    width:100%;
+  }
+  .feature-wrapper.grid h1{
+    display:grid;
+    grid-area: a;
+  }
+  .feature.grid:nth-child(2){
+    display:grid;
+    grid-area:b;
+  }
+  .feature.grid:nth-child(3){
+    display:grid;
+    grid-area:c;
+  }
+  .feature.grid:nth-child(4){
+    display:grid;
+    grid-area:d;
+  }
+  .feature-wrapper.smaller-font{
+    font-size: 1em;
+    padding:0 2% 5% 2%;
+  }
+  .button.grid{
+    padding:0 30% 0 30%;
+  }
+  .tournament{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+  }
+  .button-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+  }
+  .button.padding{
+    margin:5%;
+    padding:5%;
+  }
+  .tournament p{
+    float:none;
+    width:100%;
+  }
+  .feature-wrapper.row{
+    flex-flow:row;
+  }
+  .feature{
+    width:100%;
+    padding:0;
+  }
+  .bio{
+    display:flex;
+    flex-flow: row;
+  }
+  .bio figure{
+    width: 40%;
+    padding: 0 5% 0 5%;
+  }
+  .bio p{
+    width: 40%;
+    padding: 0 5% 0 5%;
+  }
+  .button{
+    width:25%;
+  }
+  .feature.mini-padding{
+    margin:2% 0 2% 0;
+  }
+}
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
