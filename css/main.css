@@ -155,12 +155,11 @@ nav{
 }
 nav ul{
   list-style: none;
+  width:90%;
 }
 nav li {
-  display: flex;
   float:left;
-  padding-left: 2%;
-  justify-content: space-between;
+  padding-right: 2%;
 }
 nav a{
   color:#ffffff;
@@ -177,6 +176,7 @@ nav a:hover{
 }
 .home h3{
   color:#ffffff;
+  font-size: 1.8em;
 }
 .home-wrapper{
   width:75%;
@@ -400,12 +400,6 @@ footer h1{
 }
 /*end contact*/
 
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -486,8 +480,51 @@ footer h1{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media all and (min-width:768px) and (max-width:1200px){
+    /* Style adjustments for tablets */
+    /*font size changes*/
+    h1{
+      font-size: 2.5em;
+    }
+    h3{
+      font-size: 1.8em;
+    }
+    p, a{
+      font-size: 1.2em;
+    }
+    nav a{
+      font-size: 1.5em;
+    }
+    footer a{
+      width:65%;
+    }
+    footer img{
+      padding:30%;
+      width:40%;
+    }
+    footer h1{
+      font-size: 1.8em;
+    }
+    .sitemap a{
+      font-size: 1em;
+    }
+    .amanda h3{
+      font-size: 1em;
+    }
+    .amanda a{
+      width:40%;
+    }
+    /*end font-size changes*/
+    .home-wrapper{
+      width:50%;
+    }
+    .feature-wrapper.smaller-font{
+      font-size: 1em;
+      padding:0 2% 5% 2%;
+    }
+    .button{
+      width:50%;
+    }
 }
 
 @media print,
